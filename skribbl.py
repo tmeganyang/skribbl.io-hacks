@@ -20,7 +20,7 @@ def get_possibilities(status):
                 break
     return possibilities
 
-words = get_raw_document_data('custom.txt')
+words = get_raw_document_data('words.txt')
 
 word_list = words.split(", ")
 word_dict = {}
@@ -28,7 +28,7 @@ for word in word_list:
     word_dict[len(word)] = word_dict.get(len(word), []) + [word]
 
 print('LINK: ')
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(executable_path='/Users/meganyang/skribble/chromedriver')
 driver.get(input())
 while True:
     command = input()
