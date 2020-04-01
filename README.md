@@ -19,3 +19,5 @@ To install everything you need from this repository, run the following command f
 git clone https://github.com/tmeganyang/skribble.io-hacks
 
 ```
+
+You will also have to install ChromeDriver from https://chromedriver.chromium.org/. Follow the directions there and ensure that you place ChromeDriver in your PATH.
